@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.main {
+  background-image: url("../images/bg.svg");
+  height: calc(100vh - 75px);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left bottom;
+  outline-width: v;
+  overflow: hidden;
+  position: relative;
+}
+
+.side-img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.hero {
+  position: absolute;
+  top: 5vh;
+  left: 15vh;
+  color: aliceblue;
+  overflow: hidden;
+}
+.hero h1 {
+  font-size: 7vw;
+}
+.hero p {
+  font-size: 2vw;
+  color: #ccc;
+  line-height: 2rem;
+  width: 55vw;
+}
+.hero button {
+  color: coral;
+  font-size: 2rem;
+  background-color: transparent;
+  border: 1px solid coral;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  margin: 1rem 0rem;
+  transition: background-color 1s, color 1s, border-radius 1s;
+  scale: 1;
+}
+.hero button:hover {
+  background-color: coral;
+  color: white;
+  border-radius: 1rem;
+}
+
+@media (max-width: 768px) {
+  .side-img {
+    display: none;
+  }
+  .hero {
+    left: 30vw;
+  }
+}
+.navbar {
+  background-color: coral;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  padding: 0px 6rem;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: navy;
+}
+
+.circle {
+  background-color: #ffb79d;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+.tiny {
+  background-color: #ffb79d;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.progress {
+  margin: 1rem 0rem;
+  height: 30px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #ddd;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 10px;
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.skills {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+  padding: 0 6rem;
+}
+.skills #frontend, .skills #backend {
+  flex: 1;
+}
+
+.projects {
+  display: flex;
+  padding: 0 5 rem;
+  justify-content: space-around;
+}
+
+.card {
+  max-width: 25%;
+  border: 2px solid gray;
+}
+.card .card-body {
+  padding: 1.5rem;
+}
+.card img {
+  max-width: 100%;
+}
+.card h1 {
+  font-size: 3rem;
+  margin: 1.5rem 0;
+}
+.card p {
+  font-size: 1.5rem;
+  color: #999;
+}
+.card a {
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
